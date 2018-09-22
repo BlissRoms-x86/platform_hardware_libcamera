@@ -3,7 +3,11 @@ ifeq ($(USE_CAMERA_STUB),false)
 LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 
-LOCAL_CFLAGS := -fno-short-enums -DHAVE_CONFIG_H
+LOCAL_CFLAGS := -fno-short-enums -DHAVE_CONFIG_H \
+        -Wno-gnu-designator \
+        -Wno-literal-conversion \
+        -Wno-unused-parameter \
+        -Wno-unused-variable
 
 LOCAL_C_INCLUDES := \
 	system/media/camera/include \
