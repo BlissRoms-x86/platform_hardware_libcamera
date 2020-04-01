@@ -27,6 +27,9 @@ LOCAL_SHARED_LIBRARIES := \
 	libui \
 	libutils \
 
+LOCAL_HEADER_LIBRARIES := \
+	libbinder_headers
+
 LOCAL_MODULE := camera.x86
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_RELATIVE_PATH := hw
